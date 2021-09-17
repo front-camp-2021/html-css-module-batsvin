@@ -1,0 +1,115 @@
+button {
+   background: #6f64f8;
+   color: #ffffff;
+   border: 0;
+}
+
+.cards {
+   width: 1256px;
+   background: #f9f9f9;
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 30px;
+}
+
+.card {
+   background: #ffffff;
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+   border-radius: 8px;
+   width: 400px;
+   height: 486px;
+   font-family: Montserrat;
+   font-style: normal;
+   margin-bottom: 28px;
+}
+.card-image {
+   height: 277px;
+   padding: 30px;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+}
+.card-image img {
+   max-width: 100%;
+   height: auto;
+}
+.card-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 20px 0 20px;
+}
+
+.rating {
+   width: 65px;
+   border-radius: 3px;
+   padding: 7px 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.rating span {
+   font-size: 14px;
+}
+.price {
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 21px;
+}
+.card-text {
+   padding: 16px 24px 22px 24px;
+}
+.card-text h3 {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2c2c2c;
+   padding-bottom: 1px;
+   margin: 0;
+}
+.card-text span {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 14px;
+   color: #2c2c2c;
+   padding-top: 0;
+   margin-top: 0;
+}
+.card-footer {
+   display: flex;
+   justify-content: space-around;
+   border-radius: 0px 0px 8px 8px;
+}
+.card-footer button {
+   width: 50%;
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 18x;
+   padding: 12px;
+}
+.wishlist {
+   background: #ededed;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0px 0px 0px 8px;
+   color: #2c2c2c;
+}
+.wishlist svg {
+   padding-right: 10px;
+}
+.cart {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0px 0px 8px 0px;
+}
+.cart svg {
+   padding-right: 10px;
+}
