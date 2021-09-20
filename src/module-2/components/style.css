@@ -1,10 +1,74 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 2400px) and (-webkit-min-device-pixel-ratio: 1) {
+   aside {
+      width: 30%;
+   }
+   .card-background {
+      width: 33.33%;
+   }
+   .main-cards {
+      width: 70%;
+   }
+   .cards-header {
+      padding-right: 30px;
+   }
+   .search {
+      margin-right: 30px;
+   }
+   .card {
+      margin: 0 30px 40px 0;
+   }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
+   aside {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   .card-background {
+      width: 50%;
+   }
+   .main-cards {
+      width: 100%;
+   }
+   .aside-header {
+      padding: 0 5px 0 5px;
+   }
+   .card {
+      margin: 0 10px 15px 10px;
+   }
+   .search {
+      margin: 10px;
+   }
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+   aside {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   .card-background {
+      width: 100%;
+   }
+   .main-cards {
+      width: 100%;
+   }
+   .aside-header {
+      padding: 0 2px 0 2px;
+   }
+   .card {
+      margin: 0 10px 15px 10px;
+   }
+   .search {
+      margin: 10px;
+   }
+}
+
 body {
    background-color: #f9f9f9;
    font-family: Montserrat;
    height: 100%;
 }
 .container {
-   width: 1280px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -42,6 +106,7 @@ ul.breadcrumb li a:hover {
 }
 aside {
    width: 30%;
+   padding-right: 30px;
 }
 .aside-header {
    display: flex;
@@ -59,13 +124,13 @@ aside {
    border-radius: 8px;
    width: 47px;
    height: 40px;
+   color: #000000;
 }
 .aside-characteristic h4 {
    margin: 0 0 21px 0;
    padding: 0;
 }
 .aside-characteristic {
-   margin: 2px;
    background-color: #ffffff;
    padding: 19px 45px;
    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
@@ -150,6 +215,7 @@ input[type="checkbox"]:checked:after {
    height: 56px;
    width: 100%;
    margin-top: 28px;
+
    justify-content: center;
    align-items: center;
    color: white;
@@ -163,9 +229,14 @@ main {
    display: flex;
    align-items: stretch;
 }
-.main-cards {
-   margin-left: 30px;
-   width: 70%;
+.cards-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.cards-header h5 {
+   font-weight: normal;
+   font-size: 18px;
 }
 .cards-hearts {
    background: #6f64f8;
@@ -200,7 +271,6 @@ button {
    color: #ffffff;
    border: 0;
 }
-
 .cards {
    width: 100%;
    background: #f9f9f9;
@@ -213,22 +283,28 @@ button {
    background: #ffffff;
    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
    border-radius: 8px;
-   width: 48.5%;
    height: 486px;
    font-family: Montserrat;
    font-style: normal;
-   margin-bottom: 28px;
 }
 .card-image {
    height: 277px;
    padding: 30px;
-   display: flex;
-   justify-content: center;
-   margin: auto;
+}
+.card-image-padding {
+   height: 277px;
+   position: relative;
 }
 .card-image img {
+   display: block;
    max-width: 100%;
    height: auto;
+   position: absolute;
+   margin: auto;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
 }
 .card-header {
    display: flex;
@@ -236,7 +312,6 @@ button {
    justify-content: space-between;
    margin: 0 20px 0 20px;
 }
-
 .rating {
    width: 65px;
    border-radius: 3px;
