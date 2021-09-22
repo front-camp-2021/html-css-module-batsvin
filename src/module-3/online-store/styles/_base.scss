@@ -1,0 +1,89 @@
+$main-color: #7e72f2;
+$back-color: #f9f9f9;
+$black-color: black;
+$white-color: white;
+$gray-color: #979797;
+$hr-color: #d6d6d6;
+$text-color: #2c2c2c;
+body {
+   background-color: $back-color;
+   font-family: Montserrat;
+   height: 100%;
+   font-style: normal;
+   header {
+      display: flex;
+   }
+}
+hr {
+   border: 1px solid $hr-color;
+   margin-top: 20px;
+   margin-bottom: 33px;
+}
+input[type="radio"] {
+   margin-right: 11px;
+   margin-bottom: 18px;
+   &:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $white-color;
+      content: "";
+      display: inline-block;
+      visibility: visible;
+      border: 1px solid $gray-color;
+   }
+   &:checked:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 20px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $main-color;
+      content: "";
+      display: inline-block;
+      visibility: visible;
+      border: 1px solid $main-color;
+   }
+}
+input[type="checkbox"] {
+   margin-right: 11px;
+   margin-bottom: 0px;
+   &:after {
+      width: 19px;
+      height: 17px;
+      border-radius: 3px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $white-color;
+      content: "";
+      display: inline-block;
+      visibility: visible;
+      border: 1px solid $gray-color;
+   }
+   &:checked:after {
+      width: 19px;
+      height: 17px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: $main-color;
+      content: "";
+      display: inline-block;
+      visibility: visible;
+      border: 1px solid $main-color;
+   }
+}
+main {
+   display: flex;
+   align-items: stretch;
+}
+button {
+   background: #6f64f8;
+   color: #ffffff;
+   border: 0;
+}
