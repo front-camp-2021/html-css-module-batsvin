@@ -1,0 +1,91 @@
+@use "./base" as b;
+
+.aside {
+   &__hower {
+      background: b.$white-color;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+      border: 0;
+      border-radius: 8px;
+      width: 47px;
+      height: 40px;
+      color: b.$black-color;
+   }
+   &__clear {
+      display: flex;
+      background: b.$main-color;
+      border: 0;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+      border-radius: 8px;
+      height: 56px;
+      width: 100%;
+      margin-top: 28px;
+      justify-content: center;
+      align-items: center;
+      color: b.$white-color;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: Montserrat;
+   }
+}
+.main-cards {
+   &__hearts {
+      background: b.$main-color;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+      border: 0;
+      border-radius: 8px;
+      width: 45px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+.card {
+   &__rating {
+      width: 65px;
+      border-radius: 3px;
+      padding: 7px 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      span {
+         font-size: 14px;
+      }
+   }
+   &__wishlists {
+      width: 50%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18x;
+      padding: 12px;
+      background: b.$back-color;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px 0px 0px 8px;
+      color: b.$text-color;
+      svg {
+         padding-right: 10px;
+      }
+   }
+   &__cart {
+      width: 50%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18x;
+      padding: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px 0px 8px 0px;
+      svg {
+         padding-right: 10px;
+      }
+   }
+}
