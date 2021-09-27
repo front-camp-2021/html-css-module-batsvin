@@ -1,5 +1,5 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 2400px) and (-webkit-min-device-pixel-ratio: 1) {
-   aside {
+   .aside {
       width: 30%;
    }
    .card-background {
@@ -7,58 +7,58 @@
    }
    .main-cards {
       width: 70%;
+      &__search {
+         margin-right: 30px;
+      }
    }
    .cards-header {
       padding-right: 30px;
-   }
-   .search {
-      margin-right: 30px;
    }
    .card {
       margin: 0 30px 40px 0;
    }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
-   aside {
+   .aside {
       position: absolute;
       top: -9999px;
       left: -9999px;
+      &__header {
+         padding: 0 5px 0 5px;
+      }
    }
    .card-background {
       width: 50%;
    }
    .main-cards {
       width: 100%;
-   }
-   .aside-header {
-      padding: 0 5px 0 5px;
+      &__search {
+         margin: 10px;
+      }
    }
    .card {
       margin: 0 10px 15px 10px;
    }
-   .search {
-      margin: 10px;
-   }
 }
 @media only screen and (min-device-width: 310px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-   aside {
+   .aside {
       position: absolute;
       top: -9999px;
       left: -9999px;
+      &__aside-header {
+         padding: 0 2px 0 2px;
+      }
    }
    .card-background {
       width: 100%;
    }
    .main-cards {
       width: 100%;
-   }
-   .aside-header {
-      padding: 0 2px 0 2px;
+      &__search {
+         margin: 10px;
+      }
    }
    .card {
       margin: 0 10px 15px 10px;
-   }
-   .search {
-      margin: 10px;
    }
 }
